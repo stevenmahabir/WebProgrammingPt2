@@ -1,0 +1,78 @@
+
+/*Element selector for the header class*/
+.header{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Styling for navbar*/
+.header nav ul li{
+    display: inline; /*Displays nav bar inline*/
+}
+
+.header nav ul li a{
+    text-decoration: none; /*Remove underline */
+    padding: 10px 15px; /*Add padding to nav bar*/
+    margin-right: -3px; /*Removes space between padding */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    
+}
+
+.header nav ul li a:hover {
+    background-color: #ccccccf6; /*Changes hover color*/
+    color: red;
+}
+
+/*Body Styling*/
+body{
+    font-family: Arial, sans-serif;
+}
+/* Allow flexability within container */
+.container{
+    display:flex;
+    flex-wrap: wrap;/*Allows wrapping of flex items*/
+
+}
+
+/* Set aside profile overview*/
+aside{
+    background: #ddd;
+    padding: 25px;
+    margin-left: 20px;
+    width: 300px /*Fixed width of sidebar*/
+}
+
+aside p {
+    text-align: center;
+}
+
+.profile {
+    background-color: grey;
+}
+.Overview h1{
+    text-align: center;
+    margin: 10px;
+}
+
+.Overview li{
+    margin: 5px;
+}
+
+.contact-info{ 
+   margin: 20px; /*Margin top*/
+}
+
+main {
+    flex: 1; /*brings content to the right of my profile overview*/
+    padding: 20px; /*space between content and border*/
+}
+
+section {
+    background: #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}

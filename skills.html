@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <!--Charset to interpret text-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Steven's Personal Website</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <!-- Header display title and nav bar-->
+        <div class="header">
+            <h1>Computer and Related Skills</h1>
+            <p>Welcome to my my Computer and Related Skills!</p>
+            <nav>
+                <ul>
+                    <li><a href="Assignment1.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="skills.html">Computer and Related Skills</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--Main container for page content-->
+        <div class="container">
+            <!--Aside function to add a sidebar containing profile overview-->
+            <aside>
+                <div class="Overview">
+                    <img src="Steven.jpg" alt="This is me!">
+                    <h1> Steven Mahabir</h1>
+                    <p class="title">Software Development & Network Engineering student with a background in Advertising & Marketing Communications Management</p>
+                    <ul class="contact-info">
+                        <li>Phone: (647) 470-1937</li>
+                        <li>Email: stevenmahabir@hotmail.com</li>
+                        <li>Social: <a href="https://ca.linkedin.com/in/stevenmahabir"> LinkedIn</a></li>
+                        <li>Location: Toronto, Ontario, Canada</li>
+                    </ul>
+                    <!--Add Resume download/Email now buttons-->
+                </div>
+            </aside>
+            <!--Main Content-->
+            <main>
+                <!--Section containing my About me-->
+                <section class="About-Me">
+                    <h2>About Me</h2>
+                    <p>I have a passion for creativity and technology. Inspiration to me brings a new light to the world. Therefore, I am happy to meet new people and ready to learn new skills while taking on challenges. </p>
+                </section>
+                <!--Section containing my resume details-->
+                <section>
+                    <div class="Software-Skills">
+                        <h2>Software Skills</h2>
+                        <ul>
+                            <li><Strong>Creative Software: </Strong>Photoshop, Lightroom, Canva, Adobe Illustrator, Adobe InDesign, Adobe Acrobat</li>
+                            <li><Strong>Media Databases: </Strong>Clear Decisions/Vividata, Infosys+TV, COMMB, Card Online, Google Ads, ComScore, Google Analytics, MediaOcean, DDS, CM360, Datorama, etc</li>
+                            <li><Strong>Microsoft Software: </Strong>Word, PowerPoint, Excel, OneNote, Outlook</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!--Footer Section-->
+        <footer>
+        <!-- Div for visitor count -->
+        <div id="visitcounter">Visitor Count: <span id="Visitor">0</span></div>
+            <!-- JavaScript for visitor count -->
+            <script>
+                //Retrieve count from local storage or set to 0 to keep count in browser
+                var visitorco = localStorage.getItem('visitorStorage') || 0;
+                visitorco++;
+                //Store the data in a local storage built into the web browser
+                localStorage.setItem('visitorStorage', visitorco);
+                //display visitor count output
+                document.getElementById('Visitor').textContent = visitorco;
+            </script>
+            <!--Footer Text-->
+            <p>&copy; 2024 Steven Mahabir Assignment 1</p>
+
+        </footer>
+        
+    </body>
+
+
+</html>

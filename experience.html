@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <!--Charset to interpret text-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Steven's Personal Website</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <!-- Header display title and nav bar-->
+        <div class="header">
+            <h1>Experience</h1>
+            <p>Welcome to my Experiences!</p>
+            <nav>
+                <ul>
+                    <li><a href="Assignment1.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="skills.html">Computer and Related Skills</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--Main container for page content-->
+        <div class="container">
+            <!--Aside function to add a sidebar containing profile overview-->
+            <aside>
+                <div class="Overview">
+                    <img src="Steven.jpg" alt="This is me!">
+                    <h1> Steven Mahabir</h1>
+                    <p class="title">Software Development & Network Engineering student with a background in Advertising & Marketing Communications Management</p>
+                    <ul class="contact-info">
+                        <li>Phone: (647) 470-1937</li>
+                        <li>Email: stevenmahabir@hotmail.com</li>
+                        <li>Social: <a href="https://ca.linkedin.com/in/stevenmahabir"> LinkedIn</a></li>
+                        <li>Location: Toronto, Ontario, Canada</li>
+                    </ul>
+                    <!--Add Resume download/Email now buttons-->
+                </div>
+            </aside>
+            <!--Main Content-->
+            <main>
+                <!--Section containing my About me-->
+                <section class="About-Me">
+                    <h2>About Me</h2>
+                    <p>I have a passion for creativity and technology. Inspiration to me brings a new light to the world. Therefore, I am happy to meet new people and ready to learn new skills while taking on challenges. </p>
+                </section>
+                <!--Section containing my resume details-->
+                <section>
+                    <div class="Experience">
+                        <h2>Experience</h2>
+                            <h3>Touché - Senior Digital Analyst - Toronto, Ontario (October 2022 - November 2023)</h3>
+                            <ul>
+                                <li>Develop digital media strategies and execute media plans to achieve established KPIs</li>
+                                <li>Identify and brief media partners</li>
+                                <li>Supervise the negotiations and costs established by the assistant and finalize them in the media calendars and in Prisma</li>
+                                <li>Supervise the creation of the campaign to the upload and verify the campaign parameters on the platforms (budgets, dates, targets)</li>
+                                <li>Analyze campaign performance statistics and recommend performance enhancements</li>
+                                <li>Identify, prioritize, and secure business opportunities</li>
+                            </ul>
+                            <ul>
+                                <li>Manage direct client relationships as well as train and manage assistants in all media planning functions</li>
+                                <li>Active collaboration with various departments and media buyers within Wavemaker and across GroupM</li>
+                                <li>Making and maintaining strong working relationships with media vendors for smooth planning, execution, and implementation</li>
+                                <li>Creating/Inputting MPA/Campaign shells into Mediaocean/DDS to ensure billing is correct. As well as keeping a track record of monthly vendor spend reports</li>
+                                <li>Ensuring all Mid/Final reports are delivered from vendors on time to be reformatted and sent to the client</li>
+                            </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!--Footer Section-->
+        <footer>
+        <!-- Div for visitor count -->
+        <div id="visitcounter">Visitor Count: <span id="Visitor">0</span></div>
+            <!-- JavaScript for visitor count -->
+            <script>
+                //Retrieve count from local storage or set to 0 to keep count in browser
+                var visitorco = localStorage.getItem('visitorStorage') || 0;
+                visitorco++;
+                //Store the data in a local storage built into the web browser
+                localStorage.setItem('visitorStorage', visitorco);
+                //display visitor count output
+                document.getElementById('Visitor').textContent = visitorco;
+            </script>
+            <!--Footer Text-->
+            <p>&copy; 2024 Steven Mahabir Assignment 1</p>
+
+        </footer>
+        
+    </body>
+
+
+</html>
