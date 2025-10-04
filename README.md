@@ -1,7 +1,7 @@
 # Steven Mahabir - Old Personal Website
 
 A responsive personal portfolio website showcasing my education, experience, skills, and hobbies. This was created when I was first introduced to web programming.
-You can stay up to date on my current portfolio @ stevenmahabir.github.io
+You can stay up to date on my current portfolio @ **stevenmahabir.github.io**
 
 ## 📋 Project Overview
 
@@ -41,3 +41,4 @@ This is Assignment 1 for **SYST10199 - Web Programming**, featuring a multi-page
 ---
 
 **Note**: This project was created as part of a college assignment for Sheridan College.
+
