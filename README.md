@@ -40,5 +40,6 @@ This is Assignment 1 for **SYST10199 - Web Programming**, featuring a multi-page
 
 ---
 
-**Note**: This project was created as part of a college assignment for Sheridan College.
+**Note**: This project was created as part of a college assignment.
+
 
